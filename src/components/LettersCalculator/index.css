@@ -1,0 +1,65 @@
+/* Write your code here. */
+* {
+  box-sizing: border-box;
+  font-family: Roboto;
+}
+
+.bg {
+  border: 1px solid gray;
+  background-image: linear-gradient(to right, #1d976c, #93f9b9);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+}
+
+.heading {
+  color: white;
+}
+.imgEl {
+  height: 300px;
+  width: 400px;
+}
+
+.para {
+  color: white;
+}
+
+.inputStyle {
+  background-color: transparent;
+  padding: 10px 3rem;
+  border-radius: 2px;
+  border: 1px solid white;
+  margin-bottom: 8px;
+  color: white;
+}
+
+.btnEl {
+  color: #219a6f;
+  padding: 10px 5rem;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: white;
+}
+
+@media (max-width: 997px) {
+  .bg {
+    flex-direction: column;
+  }
+  .card {
+    text-align: center;
+  }
+  .para {
+    text-align: center;
+  }
+  .imgEl {
+    order: 1;
+  }
+  .card {
+    order: 2;
+  }
+}
